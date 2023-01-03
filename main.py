@@ -67,7 +67,6 @@ class Lazada:
                 pass
         self.next_page()
     def next_page(self):
-        print('e3')
         self.driver.get(self.link + '/?page=' + str(self.counter))
         self.counter += 1
         self.page_links()
